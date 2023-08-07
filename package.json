@@ -1,18 +1,21 @@
 {
   "private": true,
   "sideEffects": false,
-  "type": "module",
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev --manual -c \"arc sandbox -e testing\"",
-    "start": "cross-env NODE_ENV=production arc sandbox",
-    "typecheck": "tsc"
+    "build:remix": "remix build",
+    "build:sass": "sass -Inode_modules/@uswds -Inode_modules/@uswds/uswds/packages app/theme.scss app/theme.css",
+    "build": "run-s build:sass build:remix",
+    "dev:remix": "remix dev --manual -c \"arc sandbox -e testing\"",
+    "dev:sass": "sass --watch -Inode_modules/@uswds -Inode_modules/@uswds/uswds/packages app/theme.scss app/theme.css",
+    "dev": "run-p \"dev:*\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@remix-run/architect": "^1.19.2",
     "@remix-run/css-bundle": "^1.19.2",
     "@remix-run/node": "^1.19.2",
     "@remix-run/react": "^1.19.2",
+    "@trussworks/react-uswds": "^5.1.1",
     "cross-env": "^7.0.3",
     "isbot": "^3.6.8",
     "react": "^18.2.0",
@@ -23,13 +26,50 @@
     "@architect/architect": "^10.12.1",
     "@remix-run/dev": "^1.19.2",
     "@remix-run/eslint-config": "^1.19.2",
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "@types/source-map-support": "^0.5.6",
-    "eslint": "^8.38.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-csso": "^6.0.1",
+    "prettier": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "sass": "^1.64.2",
     "typescript": "^5.0.4"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18"
+  },
+  "prettier": {
+    "plugins": [
+      "@trivago/prettier-plugin-sort-imports"
+    ],
+    "importOrder": [
+      "^[@a-zA-Z].*(?<!(?:css|gif|json|png|svg))$",
+      "^[.~/].*(?<!(?:css|gif|json|png|svg))$",
+      ""
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "ignorePatterns": [
+      "*.mdx"
+    ],
+    "extends": [
+      "@remix-run/eslint-config",
+      "@remix-run/eslint-config/node",
+      "prettier"
+    ],
+    "rules": {
+      "prefer-const": "error"
+    }
   }
 }
