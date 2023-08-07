@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+
+/.cache
+/server/index.mjs
+/server/index.mjs.map
+/public/build
+preferences.arc
+sam.json
+sam.yaml
+.env
