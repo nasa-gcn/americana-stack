@@ -1,6 +1,22 @@
-# Welcome to Remix!
+# Remix Americana Stack
 
-- [Remix Docs](https://remix.run/docs)
+Learn more about [Remix Stacks](https://remix.run/stacks).
+
+To get started, run:
+
+    npx create-remix@latest --template nasa-gcn/americana-stack
+
+## What's in the stack
+
+- Accessibility-first design system and CSS framework for United States government web sites with the [U.S. Web Design System (USWDS)](https://designsystem.digital.gov)
+- USWDS widgets for React with [trussworks/react-uswds](https://github.com/trussworks/react-uswds.git)
+- [AWS deployment](https://aws.com) with [Architect](https://arc.codes/)
+- Production-ready [DynamoDB Database](https://aws.amazon.com/dynamodb/)
+- DynamoDB access via [`arc.tables`](https://arc.codes/docs/en/reference/runtime-helpers/node.js#arc.tables)
+- Code formatting with [Prettier](https://prettier.io)
+- Linting with [ESLint](https://eslint.org)
+- Static Types with [TypeScript](https://typescriptlang.org)
+- Automated formatting, linting, and type checks on git commits with [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
 
 ## Development
 
