@@ -55,3 +55,19 @@ If you make it through all of that, you're ready to deploy!
    ```
 
 You're in business!
+
+## Styling
+
+There are a variety of ways to add custom CSS styling.
+
+### Theme customization - [`app/theme.scss`](https://github.com/nasa-gcn/americana-stack/blob/main/app/theme.scss)
+
+You can customize the USWDS theme by adjusting any of the [USWDS settings](https://designsystem.digital.gov/documentation/settings/) or by adding custom [Sass](https://sass-lang.com) by editing the file [`app/theme.scss`](https://github.com/nasa-gcn/americana-stack/blob/main/app/theme.scss).
+
+### Regular style sheets - `app/**/*.css`
+
+You can add ordinary CSS stylesheets (file extension `.css`) anywhere in the [app](https://github.com/nasa-gcn/americana-stack/blob/main/app) directory and then [link them into the route modules where you need them](https://remix.run/docs/en/main/guides/styling#regular-stylesheets).
+
+### CSS modules - `app/**/*.module.css`
+
+You can add (file extension `.module.css`) anywhere in the [app](https://github.com/nasa-gcn/americana-stack/blob/main/app) directory and then [include them in any React component](https://remix.run/docs/en/main/guides/styling#css-modules).

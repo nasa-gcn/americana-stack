@@ -2,6 +2,11 @@
   $theme-show-notifications: false,
   $theme-image-path: '~/../node_modules/@uswds/uswds/dist/img',
   $theme-font-path: '~/../node_modules/@uswds/uswds/dist/fonts'
+    // Customize USWDS theme settings here.
+  // For all available options, see
+  // https://designsystem.digital.gov/documentation/settings/
 );
 
 @forward 'uswds';
+
+// Add custom Sass here.
