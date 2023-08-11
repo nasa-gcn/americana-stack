@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '18'
       - name: NPM Install
-        run: npm ci
+        run: if [ -e package-lock.json ]; then npm ci; else npm i; fi
       - name: Run eslint linter
         run: npx eslint --max-warnings 0 .
       - name: Run TypeScript compiler
