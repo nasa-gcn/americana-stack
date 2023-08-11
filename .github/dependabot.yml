@@ -1,0 +1,19 @@
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    ignore:
+      # Ignore AWS SDK packages because they must be pinned to the versions in
+      # the AWS Lambda runtime.
+      # See https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html
+      - dependency-name: '@aws-sdk/*'
+      - dependency-name: aws-sdk

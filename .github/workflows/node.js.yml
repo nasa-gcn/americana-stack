@@ -1,0 +1,25 @@
+name: Node.js CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: NPM Install
+        run: npm ci
+      - name: Run eslint linter
+        run: npx eslint --max-warnings 0 .
+      - name: Run TypeScript compiler
+        run: npx tsc
+      - name: Run Prettier code style checks
+        run: npx prettier -c .
