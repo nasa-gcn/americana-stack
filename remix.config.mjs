@@ -1,3 +1,5 @@
+const isProduction = process.env.NODE_ENV === 'production'
+
 /** @type {import('@remix-run/dev').AppConfig} */
 export default {
   ignoredRouteFiles: ['**/.*'],
@@ -7,6 +9,10 @@ export default {
   // appDirectory: "app",
   assetsBuildDirectory: 'build/static',
   serverModuleFormat: 'cjs',
+  serverMinify: isProduction,
+  serverDependenciesToBundle: isProduction
+    ? [/^(?!@?aws-sdk(\/|$))/]
+    : undefined,
   future: {
     v2_dev: true,
     v2_errorBoundary: true,
