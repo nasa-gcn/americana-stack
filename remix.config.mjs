@@ -13,6 +13,7 @@ export default {
   serverDependenciesToBundle: isProduction
     ? [/^(?!@?aws-sdk(\/|$))/]
     : undefined,
+  postcss: true,
   future: {
     v2_dev: true,
     v2_errorBoundary: true,
