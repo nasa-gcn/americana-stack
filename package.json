@@ -3,10 +3,10 @@
   "sideEffects": false,
   "scripts": {
     "build:remix": "remix build",
-    "build:sass": "sass -Inode_modules/@uswds -Inode_modules/@uswds/uswds/packages app/theme.scss app/theme.css",
+    "build:sass": "sass -Inode_modules/@uswds -Inode_modules/@uswds/uswds/packages app:app",
     "build": "run-s build:sass build:remix",
     "dev:remix": "remix dev --manual -c \"arc sandbox -e testing --host localhost\"",
-    "dev:sass": "sass --watch -Inode_modules/@uswds -Inode_modules/@uswds/uswds/packages app/theme.scss app/theme.css",
+    "dev:sass": "sass --watch -Inode_modules/@uswds -Inode_modules/@uswds/uswds/packages app:app",
     "dev": "run-p \"dev:*\"",
     "prepare": "husky install",
     "clean": "rimraf --glob build app/theme.css* sam.*",
