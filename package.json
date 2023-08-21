@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@architect/architect": "^10.12.1",
+    "@nasa-gcn/eslint-config-gitignore": "^0.0.1",
     "@remix-run/dev": "^1.19.2",
     "@remix-run/eslint-config": "^1.19.2",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
@@ -69,6 +70,7 @@
     "extends": [
       "@remix-run/eslint-config",
       "@remix-run/eslint-config/node",
+      "@nasa-gcn/eslint-config-gitignore",
       "prettier"
     ],
     "rules": {
