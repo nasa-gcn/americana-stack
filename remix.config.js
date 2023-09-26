@@ -5,7 +5,7 @@ export default {
   ignoredRouteFiles: ['**/.*'],
   publicPath: '/_static/',
   server: 'server.ts',
-  serverBuildPath: 'build/server/index.js',
+  serverBuildPath: 'build/server/index.cjs',
   // appDirectory: "app",
   assetsBuildDirectory: 'build/static',
   serverModuleFormat: 'cjs',
