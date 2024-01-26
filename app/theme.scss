@@ -1,8 +1,7 @@
 @use 'uswds-core' with (
   $theme-show-notifications: false,
-  $theme-image-path: '@uswds/uswds/dist/img',
-  $theme-font-path: '@uswds/uswds/dist/fonts'
-    // Customize USWDS theme settings here.
+  $theme-image-path: '@uswds/uswds/img',
+  $theme-font-path: '@uswds/uswds/fonts' // Customize USWDS theme settings here.
   // For all available options, see
   // https://designsystem.digital.gov/documentation/settings/
 );

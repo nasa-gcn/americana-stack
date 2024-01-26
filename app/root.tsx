@@ -11,14 +11,14 @@ import {
 import { GovBanner, GridContainer } from '@trussworks/react-uswds'
 
 import theme from './theme.css'
-import favicon_16 from '@uswds/uswds/dist/img/favicons/favicon-16.png'
-import favicon_40 from '@uswds/uswds/dist/img/favicons/favicon-40.png'
-import favicon_57 from '@uswds/uswds/dist/img/favicons/favicon-57.png'
-import favicon_72 from '@uswds/uswds/dist/img/favicons/favicon-72.png'
-import favicon_114 from '@uswds/uswds/dist/img/favicons/favicon-114.png'
-import favicon_144 from '@uswds/uswds/dist/img/favicons/favicon-144.png'
-import favicon_192 from '@uswds/uswds/dist/img/favicons/favicon-192.png'
-import favicon_240 from '@uswds/uswds/dist/img/favicons/favicon.png'
+import favicon_16 from '@uswds/uswds/img/favicons/favicon-16.png'
+import favicon_40 from '@uswds/uswds/img/favicons/favicon-40.png'
+import favicon_57 from '@uswds/uswds/img/favicons/favicon-57.png'
+import favicon_72 from '@uswds/uswds/img/favicons/favicon-72.png'
+import favicon_114 from '@uswds/uswds/img/favicons/favicon-114.png'
+import favicon_144 from '@uswds/uswds/img/favicons/favicon-144.png'
+import favicon_192 from '@uswds/uswds/img/favicons/favicon-192.png'
+import favicon_240 from '@uswds/uswds/img/favicons/favicon.png'
 
 const favicons = {
   16: favicon_16,
