@@ -12,7 +12,7 @@ folder build/static
 
 @plugins
 plugin-remix
-  src plugin-remix.mjs
+  src plugin-remix.js
 
 @aws
 runtime nodejs18.x
