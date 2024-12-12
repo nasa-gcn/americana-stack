@@ -11,4 +11,3 @@ sam.yaml
 .env
 .eslintcache
 *.tsbuildinfo
-package-lock.json
