@@ -9,7 +9,7 @@
     "dev:remix": "remix dev --manual -c \"arc sandbox -e testing --host localhost\"",
     "dev:sass": "sass --watch -Inode_modules/@uswds -Inode_modules/@uswds/uswds/packages app:app",
     "dev": "run-p \"dev:*\"",
-    "prepare": "husky install",
+    "prepare": "husky",
     "clean": "rimraf --glob build app/theme.css* sam.*",
     "deploy": "arc deploy --no-hydrate --prune --production"
   },
