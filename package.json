@@ -26,7 +26,7 @@
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
-    "@architect/architect": "^11.0.13",
+    "@architect/architect": "^11.2.0",
     "@nasa-gcn/eslint-config-gitignore": "^0.0.2",
     "@remix-run/dev": "^2.16.0",
     "@remix-run/eslint-config": "^2.16.0",
