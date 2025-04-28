@@ -21,7 +21,7 @@
     "@trussworks/react-uswds": "^9.0.0",
     "cross-env": "^7.0.3",
     "isbot": "^5.1.27",
-    "react": "^18.2.0",
+    "react": "^19.1.0",
     "react-dom": "^18.2.0",
     "source-map-support": "^0.5.21"
   },
@@ -31,7 +31,7 @@
     "@remix-run/dev": "^2.16.5",
     "@remix-run/eslint-config": "^2.16.5",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@types/react": "^18.2.24",
+    "@types/react": "^19.1.2",
     "@types/react-dom": "^18.2.8",
     "@types/source-map-support": "^0.5.8",
     "autoprefixer": "^10.4.16",
