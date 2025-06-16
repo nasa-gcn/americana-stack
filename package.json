@@ -18,7 +18,7 @@
     "@remix-run/css-bundle": "^2.16.8",
     "@remix-run/node": "^2.16.8",
     "@remix-run/react": "^2.16.8",
-    "@trussworks/react-uswds": "^9.0.0",
+    "@trussworks/react-uswds": "^10.0.2",
     "cross-env": "^7.0.3",
     "isbot": "^5.1.28",
     "react": "^18.2.0",
